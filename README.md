@@ -37,7 +37,6 @@ Running the decoder
 -------------------
 First, make sure to place your (WAV) audio recordings in the decoder/input directory. They should be named according to this example:
 > recording_jurriaan_hello-world_1.wav
-
 The decoder script extracts information-fields from the filenames, hence they are important for proper decoding. The fields are separated by "_". The field "jurriaan" identifies the speaker. The field "hello-world" entails the spoken text. Note that words are separate by "-". The spoken text is provided for (optional, currently not fully functional) performance analysis, but you may input anything; it does not have to be the actual text just to decode. The final field "1" just has to be added for some reason ("I'll look into this, maybe later").
 
 To run the decoder, run decode_audio.sh. When all goes well, the output text can be found in decoder/output. The results directory contains more information generated during the decoding, and the scratch directory contains files created and used by the decoder, such as mfcc feature data. 
@@ -45,3 +44,4 @@ To run the decoder, run decode_audio.sh. When all goes well, the output text can
 Cleaning up your work environment
 ---------------------------------
 Most scripts here perform some checks to make sure no previously generated data is overwritten. As a result, you have to make sure to clean previously generated data manually before generating new data. You can simply remove the files and directories in the generated-directory or the output, scratch and results directories for the decoder. If you want to quickly clean up everything, you can run clean_all_generated_data.sh. Make sure to backup your results and any other generated information before doing so!
+
