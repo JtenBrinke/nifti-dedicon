@@ -8,7 +8,7 @@ model_data_dir="$dedicon_home/model_data"
 
 # Get Kaldi home directory from environment configuration.
 # TODO: This is an ugly way to read these variables but I have not found a neat way that works for python and bash.
-kaldi_dir=$(source $PWD/environment.py; echo $kaldi_dir)
+kaldi_dir=$(. $PWD/environment.py; echo $kaldi_dir)
 nj=1
 scoring=false #Does not fully work because of the block at the bottom (awk things)
 
