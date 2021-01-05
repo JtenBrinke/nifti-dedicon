@@ -1,6 +1,5 @@
 Guide to setting up the dedicon environment
-=======================================
-*By Jurriaan ten Brinke*
+===========================================
 
 Pre-requisites
 --------------
@@ -46,3 +45,6 @@ Cleaning up your work environment
 ---------------------------------
 Most scripts here perform some checks to make sure no previously generated data is overwritten. As a result, you have to make sure to clean previously generated data manually before generating new data. You can simply remove the files and directories in the generated-directory or the output, scratch and results directories for the decoder. If you want to quickly clean up everything, you can run clean_all_generated_data.sh. Make sure to backup your results and any other generated information before doing so!
 
+Credits
+-------
+This project was created by Jurriaan ten Brinke. Parts of the code were previously written by Emre Yilmaz.
