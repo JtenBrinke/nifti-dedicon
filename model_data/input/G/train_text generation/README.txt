@@ -1,0 +1,1 @@
+Note: train text generation is at this moment largely a manual process. It would be nice to create a script that can automatically generate a large set of sentences based on metasyntactic input such as Backus Naur Form. The files in this directory were used for a quick and dirty approach to creating the necessary experimental grammar.
