@@ -502,6 +502,78 @@ ik breng naar een han
 ik moet naar het han
 ik ga naar het han
 
+wil richting mercator
+breng richting mercator
+moet richting mercator
+ga richting mercator
+wil naar mercator
+breng naar mercator
+moet naar mercator
+ga naar mercator
+
+wil richting een mercator
+breng richting een mercator
+moet richting een mercator
+ga richting een mercator
+wil naar een mercator
+breng naar een mercator
+moet naar een mercator
+ga naar een mercator
+
+wil richting de mercator
+breng richting de mercator
+moet richting de mercator
+ga richting de mercator
+wil naar de mercator
+breng naar de mercator
+moet naar de mercator
+ga naar de mercator
+
+wil richting het mercator
+breng richting het mercator
+moet richting het mercator
+ga richting het mercator
+wil naar het mercator
+breng naar een mercator
+moet naar het mercator
+ga naar het mercator
+
+ik wil richting mercator
+ik breng richting mercator
+ik moet richting mercator
+ik ga richting mercator
+ik wil naar mercator
+ik breng naar mercator
+ik moet naar mercator
+ik ga naar mercator
+
+ik wil richting een mercator
+ik breng richting een mercator
+ik moet richting een mercator
+ik ga richting een mercator
+ik wil naar een mercator
+ik breng naar een mercator
+ik moet naar een mercator
+ik ga naar een mercator
+
+ik wil richting de mercator
+ik breng richting de mercator
+ik moet richting de mercator
+ik ga richting de mercator
+ik wil naar de mercator
+ik breng naar de mercator
+ik moet naar de mercator
+ik ga naar de mercator
+
+ik wil richting het mercator
+ik breng richting het mercator
+ik moet richting het mercator
+ik ga richting het mercator
+ik wil naar het mercator
+ik breng naar een mercator
+ik moet naar het mercator
+ik ga naar het mercator
+
 zou je mij naar centraal station kunnen brengen
 zou je mij naar een centraal station kunnen brengen
 zou je mij naar de centraal station kunnen brengen
@@ -536,6 +608,11 @@ zou je mij naar han kunnen brengen
 zou je mij naar een han kunnen brengen
 zou je mij naar de han kunnen brengen
 zou je mij naar het han kunnen brengen
+
+zou je mij naar mercator kunnen brengen
+zou je mij naar een mercator kunnen brengen
+zou je mij naar de mercator kunnen brengen
+zou je mij naar het mercator kunnen brengen
 
 kun je stoppen bij centraal station
 kun je stoppen bij een centraal station
@@ -572,6 +649,11 @@ kun je stoppen bij een han
 kun je stoppen bij de han
 kun je stoppen hij het han
 
+kun je stoppen bij mercator
+kun je stoppen bij een mercator
+kun je stoppen bij de mercator
+kun je stoppen hij het mercator
+
 je mag me bij centraal station afzetten
 je mag me bij een centraal station afzetten
 je mag me bij de centraal station afzetten
@@ -606,6 +688,11 @@ je mag me bij han afzetten
 je mag me bij een han afzetten
 je mag me bij de han afzetten
 je mag me bij het han afzetten
+
+je mag me bij mercator afzetten
+je mag me bij een mercator afzetten
+je mag me bij de mercator afzetten
+je mag me bij het mercator afzetten
 
 ik wil er bij centraal station uit
 ik wil er bij een centraal station uit
@@ -642,15 +729,20 @@ ik wil er bij een han uit
 ik wil er bij de han uit
 ik wil er bij het han uit
 
+ik wil er bij mercator uit
+ik wil er bij een mercator uit
+ik wil er bij de mercator uit
+ik wil er bij het mercator uit
+
 hoe laat zijn we er
 hoe laat komen we aan
 hoe laat kom ik aan
-hoe laat kom ik op mijn bestemming
+hoe laat kom ik ongeveer op mijn bestemming
 
 wanneer zijn we er
 wanneer komen we aan
 wanneer kom ik aan
-wanneer kom ik op mijn bestemming
+wanneer kom ik ongeveer op mijn bestemming
 
 wat is de aankomsttijd
 hoe lang duurt het nog
@@ -702,6 +794,11 @@ kunnen we onderweg stoppen bij de han
 kunnen we onderweg stoppen bij het han
 kunnen we onderweg stoppen bij een han
 
+kunnen we onderweg stoppen bij mercator
+kunnen we onderweg stoppen bij de mercator
+kunnen we onderweg stoppen bij het mercator
+kunnen we onderweg stoppen bij een mercator
+
 ik wil eerst nog langs centraal station
 ik wil eerst nog langs de centraal station
 ik wil eerst nog langs het centraal station
@@ -736,6 +833,11 @@ ik wil eerst nog langs han
 ik wil eerst nog langs de han
 ik wil eerst nog langs het han
 ik wil eerst nog langs een han
+
+ik wil eerst nog langs mercator
+ik wil eerst nog langs de mercator
+ik wil eerst nog langs het mercator
+ik wil eerst nog langs een mercator
 
 hoeveel kost de reis
 hoe duur is het
