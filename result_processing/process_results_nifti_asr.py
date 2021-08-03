@@ -21,11 +21,14 @@ def get_subject_id(subject_name):
 # First we read the test sentences and their grammatical reference paths into a DataFrame:
 results_df = pd.read_csv("testset_and_gramref.csv")
 
-# We add the Word Error Rate for every utterance (compared to grammar reference):
-results_df['WER (utterance vs reference)'] = results_df.apply(lambda row : metrics.wer(row['Test utterance'], row['Grammar reference']), axis = 1) 
+# We add the Word Difference Rate for every utterance (compared to grammar reference) (which is the same as WER):
+results_df['WDR (utterance vs reference)'] = results_df.apply(lambda row : metrics.wer(row['Grammar reference'], row['Test utterance']), axis = 1) 
+
+# We add the word-level Levenshtein distance:
+#results_df['Word-level Levenshtein distance'] = results_df.apply(lambda row : metrics.word_levenshtein(row['Test utterance'], row['Grammar reference']), axis = 1) 
 
 # Let's also add the character-level Levenshtein distances by comparing the first two columns:
-results_df['Levenshtein distance'] = results_df.apply(lambda row : metrics.levenshtein(row['Test utterance'], row['Grammar reference']), axis = 1) 
+#results_df['Levenshtein distance'] = results_df.apply(lambda row : metrics.levenshtein(row['Test utterance'], row['Grammar reference']), axis = 1) 
 
 
 
@@ -64,6 +67,10 @@ def get_decoded_output(speaker, test_utt):
 for speaker in list(set(speakers)):
     speaker_id=get_subject_id(speaker)
     results_df[speaker_id+'-decoded']=results_df.apply(lambda row : get_decoded_output(speaker,row['Test utterance']), axis = 1)
+    results_df['{0} WER'.format(speaker_id)] = results_df.apply(lambda row : metrics.wer(row['Grammar reference'], row['{0}-decoded'.format(speaker_id)]), axis = 1) 
+    results_df['{0} CER'.format(speaker_id)] = results_df.apply(lambda row : metrics.wer(row['Grammar reference'], row['{0}-decoded'.format(speaker_id)]), axis = 1) 
+
+
 
 # Finally, we export the results to a CSV:
 results_df.to_csv(r'processed_results_nifti_asr.csv', index = False)

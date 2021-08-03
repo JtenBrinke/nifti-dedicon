@@ -27,36 +27,13 @@ def levenshtein(seq1, seq2, print_matrix=False):
         print (matrix)
     return (matrix[size_x - 1, size_y - 1])
 
-def wer(sentence_a, sentence_b, print_matrix=False):
-    seq1=sentence_a.split()
-    seq2=sentence_b.split()
+def word_levenshtein(sentence_ref, sentence_hyp, print_matrix=False):
+    seq1=sentence_ref.split()
+    seq2=sentence_hyp.split()
     return levenshtein(seq1,seq2,print_matrix)
 
-def wer_alternative(ref, hyp):
+def wer(sentence_ref, sentence_hyp, print_matrix=False):
+    seq1=sentence_ref.split()
+    seq2=sentence_hyp.split()
+    return abs(levenshtein(seq1,seq2,print_matrix)/len(seq1))
 
-    r=ref.split()
-    h=hyp.split()
-
-    # initialisation
-    import numpy
-    d = numpy.zeros((len(r)+1)*(len(h)+1), dtype=numpy.uint8)
-    d = d.reshape((len(r)+1, len(h)+1))
-    for i in range(len(r)+1):
-        for j in range(len(h)+1):
-            if i == 0:
-                d[0][j] = j
-            elif j == 0:
-                d[i][0] = i
-
-    # computation
-    for i in range(1, len(r)+1):
-        for j in range(1, len(h)+1):
-            if r[i-1] == h[j-1]:
-                d[i][j] = d[i-1][j-1]
-            else:
-                substitution = d[i-1][j-1] + 1
-                insertion    = d[i][j-1] + 1
-                deletion     = d[i-1][j] + 1
-                d[i][j] = min(substitution, insertion, deletion)
-
-    return d[len(r)][len(h)]
